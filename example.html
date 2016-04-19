@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp Development</title>
+    <!--CSS -->
+    <!-- build:css style.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main_style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- endbuild -->
+
+    <!--JS -->
+    <!-- build:js sources.js -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/cards.js"></script>
+    <!-- endbuild -->
+</head>
+
+
+
+<body>
+<!--Header -->
+@@include('./views/header.html')
+
+<!--Success Alert -->
+<div class="alert alert-info success" role="alert">Well Done ! <br>
+You have successfully passed the challenge :)
+    <img src="../img/congrats.jpg">
+</div>
+<!--Content-->
+@@include('./views/thumbnails.html')
+
+<!--Footer -->
+@@include('./views/footer.html')
+
+</body>
+</html>

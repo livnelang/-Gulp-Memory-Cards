@@ -1,0 +1,93 @@
+//Mixins & Variables
+@auto-margin: 0px auto;
+@margin-top: 200px;
+@alert-aline: center;
+.center-text {
+    text-align: center;
+}
+.center-element {
+    margin:0px auto;
+}
+
+body {
+    background-image: url('../img/cards_back.jpg');
+}
+
+header{
+    h1 {
+        .center-text;
+        font-weight: 700;
+    }
+}
+
+.list-group {
+    .center-element;
+    width:80%;
+    margin-top: 40px;
+    button {
+        .center-text;
+    }
+}
+
+.content {
+    margin-top: @margin-top;
+}
+
+.alert {
+    text-align: @alert-aline;
+    width: 80%;
+    margin: @auto-margin;
+    box-shadow: 8px 6px 7px 0px rgba(0,0,0,0.75);
+}
+
+
+.try {
+    margin-top:50px;
+}
+.cards {
+    width: 80%;
+    background-image: url('../img/cards_back.jpg');
+    .center-element;
+}
+.thumbnail {
+    background-color: transparent;
+}
+
+.card {
+    opacity:0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: sandybrown;
+
+    .rights {
+        .center-text;
+        padding-top: 20px;
+        font-size: large;
+    }
+
+    .mobile_glyph {
+        font-size: 44px;
+        float: left;
+        display: inline-block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/**
+* On Success
+*/
+.success {
+    top: 50%;
+    display: none;
+    img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: block;
+    }
+}
